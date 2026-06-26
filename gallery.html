@@ -3,85 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery | The Brew</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/dist/min.css" rel="stylesheet">
+    <title>The Brew | Gallery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <style>
-        .gallery-img {
-            object-fit: cover;
-            height: 300px;
-            width: 100%;
-            transition: transform 0.3s ease;
-            border: 1px solid #2a251f;
-        }
-        .gallery-img:hover {
-            transform: scale(1.03);
-        }
-    </style>
 </head>
 <body>
+
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
         <div class="container">
-            <a class="nav-brand fw bold"href="index.html">The Brew</a>
-            <button class="navbar-dark navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <a class="navbar-brand fw-bold text-uppercase tracking-wider" href="index.html">THE BREW</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="gallery.html">Gallery</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link px-3 text-white-50" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 text-white-50" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 text-white" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 text-white-50" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 text-white-50" href="faq.html">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 text-white-50" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 text-white-50" href="contact.html">Contact</a></li>
                 </ul>
-                <button class="btn btn-sm btn-outline-warning ms-3" id="themeToggle">Toggle Dim Mode</button>
+                <button class="btn btn-sm btn-outline-warning ms-lg-3 px-3" id="themeToggle">Toggle Dim Mode</button>
             </div>
         </div>
     </nav>
+
     <div class="container my-5">
         <h1 class="text-center display-4 fw-bold text-gold mb-3">Visual Atmosphere</h1>
-        <p class="text-center text-muted col-md-6 mx-auto mb-5">Take an internal glance at our aesthetic workspace, precise machinery, and raw extraction procedures.</p>
+        <p class="text-center text-white col-md-6 mx-auto mb-5">An inside look at our hyper-monetized aesthetic workspace, expensive machinery, and high-pressure liquid operations.</p>
+
         <div class="row g-4">
-            <div class="col-md-4">
-                <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?q=80&w=600&auto=format&fit=crop" alt="Espresso extraction from a bottomless portafilter" class="img-fluid rounded gallery-img">
-                <p class="small text-muted mt-2 text-center">Naked Portafilter Calibration</p>
+            <div class="col-md-4 text-center">
+                <div class="ratio ratio-4x3 mb-2">
+                    <img src="photos/caffe.jpg" alt="caffe" class="rounded object-fit-cover gallery-img">
+                </div>
+                <p class="small text-gold mt-2">Financial Ruin on a Table</p>
             </div>
-            <div class="col-md-4">
-                <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?q=80&w=600&auto=format&fit=crop" alt="Specialty roasted coffee beans" class="img-fluid rounded gallery-img">
-                <p class="small text-muted mt-2 text-center">Sourcing Evaluation</p>
+            <div class="col-md-4 text-center">
+                <div class="ratio ratio-4x3 mb-2">
+                    <img src="photos/cooke.jpg" alt="cooke" class="rounded object-fit-cover gallery-img">
+                </div>
+                <p class="small text-gold mt-2">Holding Onto My Last Sanity Molecule</p>
             </div>
-            <div class="col-md-4">
-                <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?q=80&w=600&auto=format&fit=crop" alt="Minimalist interior of coffee shop" class="img-fluid rounded gallery-img">
-                <p class="small text-muted mt-2 text-center">Minimalist Coffee Workspace Space</p>
-            </div>
-            <div class="col-md-4">
-                <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=600&auto=format&fit=crop" alt="Pouring hot water from kettle onto coffee bed in V60 filter" class="img-fluid rounded gallery-img">
-                <p class="small text-muted mt-2 text-center">V60 Slow Bar Drip Session</p>
-            </div>
-            <div class="col-md-4">
-                <img src="https://images.unsplash.com/photo-1507133750040-4a8f57021571?q=80&w=600&auto=format&fit=crop" alt="Sleek custom commercial espresso machinery" class="img-fluid rounded gallery-img">
-                <p class="small text-muted mt-2 text-center">Sleek Custom Pressure Profiles</p>
-            </div>
-            <div class="col-md-4">
-                <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=600&auto=format&fit=crop" alt="Finished latte art pattern inside ceramic cup" class="img-fluid rounded gallery-img">
-                <p class="small text-muted mt-2 text-center">Finished Micro-foam Pour</p>
+            <div class="col-md-4 text-center">
+                <div class="ratio ratio-4x3 mb-2">
+                    <img src="photos/snack.jpg" alt="snack" class="rounded object-fit-cover gallery-img">
+                </div>
+                <p class="small text-gold mt-2">An Hour of Wages on a White Plate</p>
             </div>
         </div>
     </div>
+
     <footer class="py-4 text-center mt-5">
         <div class="container">
-            <p class="mb-1">&copy; 2026 The Brew. All rights reserved.</p>
-            <p class="small text-muted">Locally sourced. Professionally extracted.</p>
+            <p class="mb-1 text-white">&copy; 2026 The Brew. All rights reserved.</p>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/dist/min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
