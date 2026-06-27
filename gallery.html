@@ -3,65 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Brew | Gallery</title>
+    <title>Our Cafe Space | The Brew Cafe</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
-        <div class="container">
-            <a class="navbar-brand fw-bold text-uppercase tracking-wider" href="index.html">THE BREW</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand fw-bold text-uppercase" href="index.html">THE BREW</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link px-3 text-white-50" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link px-3 text-white-50" href="menu.html">Menu</a></li>
-                    <li class="nav-item"><a class="nav-link px-3 text-white" href="gallery.html">Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link px-3 text-white-50" href="blog.html">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link px-3 text-white-50" href="faq.html">FAQ</a></li>
-                    <li class="nav-item"><a class="nav-link px-3 text-white-50" href="about.html">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link px-3 text-white-50" href="contact.html">Contact</a></li>
+            <div class="collapse navbar-collapse" id="mainMenu">
+                <ul class="navbar-nav ms-auto gap-1">
+                    <li class="nav-item"><a class="nav-link text-white-50" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white-50" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link text-white active" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link text-white-50" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link text-white-50" href="faq.html">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link text-white-50" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link text-white-50" href="contact.html">Contact</a></li>
                 </ul>
-                <button class="btn btn-sm btn-outline-warning ms-lg-3 px-3" id="themeToggle">Toggle Dim Mode</button>
+                <button class="btn btn-sm btn-outline-warning ms-lg-3" id="themeToggle">Toggle Dim Mode</button>
             </div>
         </div>
     </nav>
-
-    <div class="container my-5">
-        <h1 class="text-center display-4 fw-bold text-gold mb-3">Visual Atmosphere</h1>
-        <p class="text-center text-white col-md-6 mx-auto mb-5">An inside look at our hyper-monetized aesthetic workspace, expensive machinery, and high-pressure liquid operations.</p>
-
-        <div class="row g-4">
-            <div class="col-md-4 text-center">
-                <div class="ratio ratio-4x3 mb-2">
-                    <img src="photos/caffe.jpg" alt="caffe" class="rounded object-fit-cover gallery-img">
-                </div>
-                <p class="small text-gold mt-2">Financial Ruin on a Table</p>
-            </div>
-            <div class="col-md-4 text-center">
-                <div class="ratio ratio-4x3 mb-2">
-                    <img src="photos/cooke.jpg" alt="cooke" class="rounded object-fit-cover gallery-img">
-                </div>
-                <p class="small text-gold mt-2">Holding Onto My Last Sanity Molecule</p>
-            </div>
-            <div class="col-md-4 text-center">
-                <div class="ratio ratio-4x3 mb-2">
-                    <img src="photos/snack.jpg" alt="snack" class="rounded object-fit-cover gallery-img">
-                </div>
-                <p class="small text-gold mt-2">An Hour of Wages on a White Plate</p>
+    <main class="container py-5">
+        <div class="row text-center mb-5 justify-content-center">
+            <div class="col-lg-8">
+                <h1 class="fw-bold text-gold display-5 mb-3">Our Cafe Space</h1>
+                <p class="text-secondary lead">Take a glimpse inside our bright morning dining experience, handcrafted recipes, and fresh pour offerings.</p>
             </div>
         </div>
-    </div>
-
-    <footer class="py-4 text-center mt-5">
-        <div class="container">
-            <p class="mb-1 text-white">&copy; 2026 The Brew. All rights reserved.</p>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col text-center">
+                <div class="ratio ratio-4x3 shadow-sm">
+                    <img src="photos/caffe.jpg" alt="Breakfast layout" class="rounded object-fit-cover gallery-img" style="border: 1px solid #333;">
+                </div>
+                <h6 class="text-gold mt-3 mb-1">Morning Pastries & Breakfast Spread</h6>
+                <p class="small text-muted">Freshly baked daily</p>
+            </div>
+            <div class="col text-center">
+                <div class="ratio ratio-4x3 shadow-sm">
+                    <img src="photos/cooke.jpg" alt="Latte art close up" class="rounded object-fit-cover gallery-img" style="border: 1px solid #333;">
+                </div>
+                <h6 class="text-gold mt-3 mb-1">Hand-Poured Artisan Latte Art</h6>
+                <p class="small text-muted">Organic espresso blend</p>
+            </div>
+            <div class="col text-center">
+                <div class="ratio ratio-4x3 shadow-sm">
+                    <img src="photos/snack.jpg" alt="Avocado toast plate" class="rounded object-fit-cover gallery-img" style="border: 1px solid #333;">
+                </div>
+                <h6 class="text-gold mt-3 mb-1">Fresh Poached Eggs on Avocado Toast</h6>
+                <p class="small text-muted">Locally sourced ingredients</p>
+            </div>
         </div>
+    </main>
+    <footer class="py-4 text-center mt-5" style="border-top: 1px solid #1c1a17;">
+        <p class="mb-0 text-muted small">&copy; 2026 The Brew Cafe. All rights reserved.</p>
     </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
